@@ -20,7 +20,7 @@ function PlantPage() {
     const updatedPlantsArray = [...plants, newPlant];
     setPlants(updatedPlantsArray);
   }
-
+console.log("plants:", plants)
   const displayedPlants = plants.filter((plant) => {
     return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
